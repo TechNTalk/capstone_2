@@ -3,7 +3,6 @@ import streamlit as st
 import pandas as pd
 import os
 import sys
-import pandas as pd
 import numpy as np
 import base64
 
@@ -17,7 +16,7 @@ c=ToMongo()
 
 # Initiate cursor
 cursor = c.news_info.find()
-df = pd.DataFrame(list(cursor))
+df = pd.read_csv('/Users/investmentguy/Documents/python_stuff/coding_temple/capstone_2_updated/src/data/national_news_broadcast.csv')
 
 st.set_page_config(
     page_title="Articles ", #<------- Change this to the page you're currently on when copying/pasting after your imports
@@ -93,3 +92,4 @@ else:
 
     st.subheader('Press the link for more info')
     st.write((df['url'].tolist())[index])
+

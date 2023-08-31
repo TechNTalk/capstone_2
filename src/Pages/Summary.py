@@ -6,7 +6,7 @@ st.text("""
         News Pubilcation Api. The first steps to do this was pulling the data,
         cleaning the data and pushing the data to MongoDB. Afterwards, I created a
         virtual environment that housed all of my python installs and
-        the application. Following, I queried the data and ran it through
+        the application. Following that, I queried the data and ran it through
         Streamlit. I then created an easily accessible application that allows
         the user to look up any author or the article and its corresponding info.
         """)

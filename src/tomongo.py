@@ -1,9 +1,7 @@
 from base import Base
-from dotenv import load_dotenv
 import pymongo
 import os
 
-load_dotenv()
 
 # Class Declaration:
 class ToMongo(Base):
@@ -17,11 +15,10 @@ class ToMongo(Base):
     '''
     
     def __init__(self):
-        load_dotenv()
         # Load the env variables:
         self.__mongo_url = os.getenv('MONGO_URL')
         #Connect to PyMongo
-        self.client = pymongo.MongoClient("MONGO_URL")
+        self.client = pymongo.MongoClient("mongodb+srv://basic:basic1234@news-api.uggm4x0.mongodb.net/?retryWrites=true&w=majority")
         # Create a database
         self.db = self.client.db
         # Create a collection:
