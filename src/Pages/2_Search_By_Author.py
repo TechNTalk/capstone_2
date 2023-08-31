@@ -31,20 +31,20 @@ st.set_page_config(
 
 # st.audio(audio_bytes, format='audio/ogg', start_time=0)
 
-def autoplay_audio(file_path: str):
-        with open(file_path, "rb") as f:
-            data = f.read()
-            b64 = base64.b64encode(data).decode()
-            md = f"""
-                <audio controls autoplay="true">
-                <source src="data:audio/ogg;base64,{b64}" type="audio/mp3">
-                </audio>
-                """
-            st.markdown(
-                md,
-                unsafe_allow_html=True,
-            )
-autoplay_audio('/Users/investmentguy/Downloads/idokay - Ive Seen It All.mp3')
+# def autoplay_audio(file_path: str):
+#         with open(file_path, "rb") as f:
+#             data = f.read()
+#             b64 = base64.b64encode(data).decode()
+#             md = f"""
+#                 <audio controls autoplay="true">
+#                 <source src="data:audio/ogg;base64,{b64}" type="audio/mp3">
+#                 </audio>
+#                 """
+#             st.markdown(
+#                 md,
+#                 unsafe_allow_html=True,
+#             )
+# autoplay_audio('/Users/investmentguy/Downloads/idokay - Ive Seen It All.mp3')
 
 sample_rate = 44100  # 44100 samples per second
 seconds = 2  # Note duration of 2 seconds
