@@ -17,6 +17,7 @@ class ToMongo(Base):
     '''
     
     def __init__(self):
+        load_dotenv()
         # Load the env variables:
         self.__mongo_url = os.getenv('MONGO_URL')
         #Connect to PyMongo
