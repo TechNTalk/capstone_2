@@ -6,7 +6,7 @@ import os
 from tomongo import ToMongo
 c=ToMongo()
 
-# c.autoplay_audio("/Users/investmentguy/Documents/python_stuff/coding_temple/capstone_2_updated/src/I've Seen It All.mp3")
+c.autoplay_audio("/Users/investmentguy/Documents/python_stuff/coding_temple/capstone_2_updated/src/I've Seen It All.mp3")
 #Establish a filepath to the national_news_broadcast.csv file
 filepath = os.path.join(Path(__file__).parents[1], 'data', 'national_news_broadcast_graph.csv')
 df = pd.read_csv(filepath, low_memory=False)
