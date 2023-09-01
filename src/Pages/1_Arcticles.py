@@ -43,7 +43,7 @@ st.set_page_config(
 #                 unsafe_allow_html=True,
 #             )
 # autoplay_audio('/Users/investmentguy/Downloads/idokay - Ive Seen It All.mp3')
-c.autoplay_audio("src/I've Seen It All.mp3")
+c.autoplay_audio("/Users/investmentguy/Documents/python_stuff/coding_temple/capstone_2_updated/src/I've Seen It All.mp3")
 st.title("Find An Article")
 art_list = df.title.tolist()
 
