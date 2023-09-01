@@ -20,7 +20,7 @@ c=ToMongo()
 
 # Initiate cursor
 cursor = c.news_info.find()
-df = pd.read_csv('/Users/investmentguy/Documents/python_stuff/coding_temple/capstone_2_updated/src/data/national_news_broadcast.csv')
+df = pd.read_csv("src/I've Seen It All.mp3")
 
 st.set_page_config(
     page_title="Articles ", #<------- Change this to the page you're currently on when copying/pasting after your imports
