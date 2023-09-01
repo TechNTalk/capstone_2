@@ -49,6 +49,9 @@ st.markdown("""The information fields displayed are:
 st.subheader("Search By Author")
 st.text("Queries and returns all articles by author name.")
 
+st.subheader("Search By Keyword")
+st.text("Queries and returns all articles by keyword name.")
+
 st.subheader("Summary")
 st.markdown("""This page provides a comprehensive explanation 
         of the app's internal mechanisms and delves into the underlying 

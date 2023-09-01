@@ -1,5 +1,7 @@
 import pandas as pd
 import json
+import base64
+import streamlit as st
 import requests;
 
 class Base:
@@ -43,8 +45,20 @@ class Base:
         columns = ['url_to_image', 'title', 'description', 'url']
         self.df1 = self.df.drop(columns=columns,axis=1)
         self.df1.to_csv("national_news_broadcast_graph.csv", index=False)
-
-
+    @staticmethod
+    def autoplay_audio(file_path: str):
+        with open(file_path, "rb") as f:
+            data = f.read()
+            b64 = base64.b64encode(data).decode()
+            md = f"""
+                <audio controls autoplay="true">
+                <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
+                </audio>
+                """
+            st.markdown(
+                md,
+                unsafe_allow_html=True,
+            )
 
 
 if __name__ == "__main__":

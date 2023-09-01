@@ -1,5 +1,8 @@
 import streamlit as st
+from tomongo import ToMongo
+c=ToMongo()
 
+c.autoplay_audio('/Users/investmentguy/Downloads/idokay - Ive Seen It All.mp3')
 st.header("News Publication Application Summary")
 st.text("""
         The purpose of this application is to create an application using the
