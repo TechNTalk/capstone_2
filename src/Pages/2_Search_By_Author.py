@@ -31,7 +31,7 @@ st.set_page_config(
 
 # st.audio(audio_bytes, format='audio/ogg', start_time=0)
 
-c.autoplay_audio('/Users/investmentguy/Downloads/idokay - Ive Seen It All.mp3')
+# c.autoplay_audio('/Users/investmentguy/Downloads/idokay - Ive Seen It All.mp3')
 
 sample_rate = 44100  # 44100 samples per second
 seconds = 2  # Note duration of 2 seconds

@@ -56,7 +56,7 @@ note_la = np.sin(frequency_la * t * 2 * np.pi)
 # #grab my collection
 a_list = mf.pos_values(df,'description')
 
-c.autoplay_audio("/Users/investmentguy/Documents/python_stuff/coding_temple/capstone_2_updated/src/I've Seen It All.mp3")
+# c.autoplay_audio("/Users/investmentguy/Documents/python_stuff/coding_temple/capstone_2_updated/src/I've Seen It All.mp3")
 
 selection = st.selectbox('Type here and click enter to search', placeholder = "Type Here", options =(["Type Here"] + a_list))
 
