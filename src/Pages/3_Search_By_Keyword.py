@@ -16,7 +16,7 @@ c=ToMongo()
 
 # Initiate cursor
 cursor = c.news_info.find()
-df = pd.read_csv("src/I've Seen It All.mp3")
+df = pd.read_csv('/Users/investmentguy/Documents/python_stuff/coding_temple/capstone_2_updated/src/data/national_news_broadcast.csv')
 
 st.set_page_config(
     page_title="Articles ", #<------- Change this to the page you're currently on when copying/pasting after your imports
@@ -55,7 +55,7 @@ note_la = np.sin(frequency_la * t * 2 * np.pi)
 
 # #grab my collection
 a_list = mf.pos_values(df,'description')
-
+c.autoplay_audio("src/I've Seen It All.mp3")
 selection = st.selectbox('Type here and click enter to search', placeholder = "Type Here", options =(["Type Here"] + a_list))
 
 #custom df for outputs and my avail articles
