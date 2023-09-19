@@ -7,7 +7,8 @@ import numpy as np
 import base64
 
 #establish a filepath to the orcale_cards.csv file
-filepath=os.path.join(Path(__file__).parents[1])
+filepath=os.path.join(Path(__file__).parents[1],'/data/national_news_broadcast.csv')
+csv = filepath + '/data/national_news_broadcast.csv'
 sys.path.insert(0, filepath)
 
 from tomongo import ToMongo

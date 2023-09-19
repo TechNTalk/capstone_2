@@ -8,8 +8,9 @@ import base64
 
 
 #establish a filepath to the orcale_cards.csv file
-filepath=os.path.join(Path(__file__).parents[1])
-sys.path.insert(0, filepath)
+filepath=os.path.join(Path(__file__).parents[1],'/data/national_news_broadcast.csv')
+csv = filepath + '/data/national_news_broadcast.csv'
+sys.path.insert(0, csv)
 
 from tomongo import ToMongo
 import myfuncs as mf

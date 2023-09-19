@@ -3,12 +3,15 @@ from pathlib import Path
 import streamlit as st
 import pandas as pd
 import os
+import sys
 from tomongo import ToMongo
 c=ToMongo()
 
 # c.autoplay_audio("/Users/investmentguy/Documents/python_stuff/coding_temple/capstone_2_updated/src/I've Seen It All.mp3")
 #Establish a filepath to the national_news_broadcast.csv file
-filepath = os.path.join(Path(__file__).parents[1], 'data', 'national_news_broadcast_graph.csv')
+filepath=os.path.join(Path(__file__).parents[0],"/Users/investmentguy/Documents/python_stuff/coding_temple/capstone_2_updated/src/data/national_news_broadcast_graph.csv")
+# csv = filepath + '/data/national_news_broadcast.csv'
+sys.path.insert(0,filepath)
 df = pd.read_csv(filepath, low_memory=False)
 
 # Take in a user input

@@ -27,14 +27,14 @@ st.set_page_config(
 
 st.title("World News Publication")
 
-st.image('https://storage.googleapis.com/stateless-mountainmedianews-co/sites/29/2020/09/US-Text.jpg',width=200)
+st.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGvE9EopHY-v6XRwTtN1_OvTeZokvi904_Zg&usqp=CAU',width=200)
 
 st.text("""In today's rapidly evolving technological landscape, we recognize the pressing need 
 to keep pace with change while preserving the essence of our origins. Is it possible 
 to seamlessly blend the comforts of tradition with the ever-advancing world of 
 technology? Welcome to the World News Publication App, featuring access to a 
 staggering 30,000 publications. This app places up-to-the-minute news articles right 
-at your fingertips, allowing you to enjoy them on the go, in your favorite coffee 
+at your fingertips, allowing you to enjoy them on the go, at your favorite coffee 
 shop, or from the comfort of your own home. It's simplicity at its finest.""")
 
 st.text("The application uses the following to create a National Parks App:")
@@ -62,7 +62,7 @@ article.""")
 
 st.subheader("Search By Author")
 st.text("""Found an author whose work resonates with you and want to explore their other 
-publications? Head over to our 'Search By Author' Page and indulge your curiosity.""")
+publications? Head over to the 'Search By Author' Page and indulge your curiosity.""")
 
 st.subheader("Search By Description")
 st.text("""Struggling to recall the name of an article or the author who wrote it? The 

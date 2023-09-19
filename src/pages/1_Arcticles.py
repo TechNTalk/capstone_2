@@ -17,10 +17,11 @@ import myfuncs as mf
 
 # Instaniate the class:
 c=ToMongo()
-
+filepath=os.path.join(Path(__file__).parents[1],'data/national_news_broadcast.csv')
+csv = filepath + '/data/national_news_broadcast.csv'
 # Initiate cursor
 cursor = c.news_info.find()
-# df = pd.read_csv('/Users/investmentguy/Documents/python_stuff/coding_temple/capstone_2_updated/src/data/national_news_broadcast.csv')
+df = pd.read_csv('/Users/investmentguy/Documents/python_stuff/coding_temple/capstone_2_updated/src/data/national_news_broadcast.csv')
 
 st.set_page_config(
     page_title="Articles ", #<------- Change this to the page you're currently on when copying/pasting after your imports
